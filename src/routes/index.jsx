@@ -6,7 +6,8 @@ import { Routes, Route } from "react-router-dom";
 const RoutesPaths = ()=>{
     return(
         <>
-        <Header></Header>
+            <Header></Header>
+            <div className="background-svg"></div>
             <Routes>
                 <Route exact path="/" element={<Home/>}/>
                 <Route exact path="/cart" element={<Cart/>}/>

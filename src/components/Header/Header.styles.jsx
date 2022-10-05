@@ -4,14 +4,18 @@ export const HeaderDiv = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    position: sticky;
+    top: 0;
     width: 100vw;
-    height: 80px;
-    background-color: #9683af;
+    height: 100px;
+    background-color: #000000f4;
 
     span{
         font-size: 3rem;
         margin: 10px;
+        color: #00ecb9;
+        text-shadow: 0 0 5px #00ecb9;
+        margin-left: 30px;
     }
 
     ul{
@@ -32,10 +36,12 @@ export const HeaderDiv = styled.div`
         padding: 10px;
         font-size: 2rem;
         border-radius: 10px;
+        transition: 0.3s;
     }
     li:hover{
-        background-color: rgb(255,255,255,0.2);
-        transition: 0.3s;
-        transform: scale(1.1);
+        color: #ff5fd7;
+        border-radius: 10px;
+        transform: translateY(-1px) scale(1.1);
+        text-shadow: 0 0 4px #ff5fd7;
     }
 `;
