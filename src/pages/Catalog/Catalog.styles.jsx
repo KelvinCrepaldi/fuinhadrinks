@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
-export const HomeDiv = styled.div`
+export const CatalogDiv = styled.div`
   .cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
+    min-height: calc(100vh - 50px);
   }
 
   .filter-container {

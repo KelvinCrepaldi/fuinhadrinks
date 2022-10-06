@@ -1,11 +1,11 @@
 import React from "react";
 import { useContext, useState } from "react";
 import { DrinkContext } from "../../Providers/Drinks";
-import { HomeDiv } from "./Home.styles";
+import { CatalogDiv } from "./Catalog.styles";
 
-import DrinkCard from "../DrinkCard";
+import DrinkCard from "../../components/DrinkCard";
 
-const Home = () => {
+const Catalog = () => {
   const [inputValue, setInputValue] = useState("");
   const { drinks } = useContext(DrinkContext);
 
@@ -17,7 +17,7 @@ const Home = () => {
     drink.name.toUpperCase().includes(inputValue.toUpperCase())
   );
   return (
-    <HomeDiv>
+    <CatalogDiv>
       <div className="filter-container">
         <input
           className="search-bar"
@@ -39,8 +39,8 @@ const Home = () => {
               return <DrinkCard key={drink.id} drink={drink} />;
             })}
       </div>
-    </HomeDiv>
+    </CatalogDiv>
   );
 };
 
-export default Home;
+export default Catalog;

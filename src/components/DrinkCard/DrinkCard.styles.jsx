@@ -12,16 +12,7 @@ export const DrinkCardDiv = styled.div`
   text-shadow: 0px 0px 4px #00ecb9;
   margin: 20px;
   padding: 20px;
-
-  .img-background {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    width: 100%;
-    background-color: #ffffff7b;
-    border-radius: 5px;
-    border: 1px solid #00ecb9;
-  }
+  height: initial;
 
   img {
     height: 200px;

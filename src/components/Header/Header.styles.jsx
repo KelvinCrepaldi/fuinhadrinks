@@ -2,47 +2,68 @@ import styled from "styled-components";
 
 export const HeaderDiv = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   position: sticky;
   top: 0;
   width: 100vw;
-  height: 100px;
-  background-color: #000000f4;
+  box-shadow: 1px 1px 4px #00ecb9;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.95) 20%,
+    #000016b2 47%,
+    rgba(0, 0, 0, 0.95) 80%
+  );
+
+  border-bottom: 1px solid #00ecb965;
 
   span {
+    display: flex;
+    align-items: center;
     font-size: 3rem;
-    margin: 10px;
     color: #00ecb9;
     text-shadow: 0 0 5px #00ecb9;
-    margin-left: 30px;
+    margin: 10px;
+  }
+
+  .icon-title {
+    font-size: 2.3rem;
+    margin-right: 20px;
+  }
+
+  nav {
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   ul {
     display: flex;
-    margin-right: 40px;
+    justify-content: center;
     list-style: none;
   }
 
   a {
     text-decoration: none;
     cursor: pointer;
-    margin: 5px;
-    color: rgb(255, 255, 255, 0.8);
+    margin: 5px 20px;
+    color: #ff5fd7;
+    text-shadow: 0 0 4px #ff5fd7;
   }
 
   li {
     text-decoration: none;
-    padding: 10px;
+    padding: 5px 5px 0px;
     font-size: 2rem;
     border-radius: 10px;
     transition: 0.3s;
   }
 
   li:hover {
-    color: #ff5fd7;
-    border-radius: 10px;
     transform: translateY(-1px) scale(1.1);
-    text-shadow: 0 0 4px #ff5fd7;
+  }
+  a:hover {
+    color: #ff0505;
+    text-shadow: 0 0 4px #ff0505;
   }
 `;

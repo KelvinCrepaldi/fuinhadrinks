@@ -8,7 +8,7 @@ export const DrinkProvider = ({ children }) => {
   const [drinks, setDrinks] = useState([]);
   useEffect(() => {
     axios
-      .get("https://api.punkapi.com/v2/beers")
+      .get("https://api.punkapi.com/v2/beers/")
       .then((res) => {
         setDrinks(res.data);
       })

@@ -1,20 +1,30 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Home from "../components/Home";
-import Cart from "../components/Cart";
+
+import Home from "../pages/Home";
+import Catalog from "../pages/Catalog";
+import About from "../pages/About";
+import DrinkPage from "../pages/DrinkPage";
+import ScrollToTop from "../components/ScrollToTop";
+
 import { Routes, Route } from "react-router-dom";
-const RoutesPaths = ()=>{
-    return(
-        <>
-            <Header></Header>
-            <div className="background-svg"></div>
-            <Routes>
-                <Route exact path="/" element={<Home/>}/>
-                <Route exact path="/cart" element={<Cart/>}/>
-            </Routes>
-            <Footer></Footer>
-        </>
-        
-    )
-}
+import { useEffect } from "react";
+const RoutesPaths = () => {
+  return (
+    <>
+      <Header></Header>
+      <div className="background-svg"></div>
+      <ScrollToTop>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/catalog/:id" element={<DrinkPage />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </ScrollToTop>
+
+      <Footer></Footer>
+    </>
+  );
+};
 export default RoutesPaths;
