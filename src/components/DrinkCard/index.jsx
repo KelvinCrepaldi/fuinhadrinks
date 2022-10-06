@@ -4,12 +4,10 @@ import { DrinkCardDiv } from './DrinkCard.styles';
 const DrinkCard = ({drink}) => {
     return (
         <DrinkCardDiv>
-            <div className='img-background'>
-                <img src={drink.image_url}></img>
-            </div>
+            <img src={drink.image_url}></img>
             <span>{drink.name}</span>
             <span>Value: $10.00</span>
-            <button>COMPRAR</button>
+            <button>Comprar</button>
         </DrinkCardDiv>
     );
 };

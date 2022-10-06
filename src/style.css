@@ -5,12 +5,11 @@
 }
 
 body{
-    background-color: rgb(32, 8, 54);
+    background-color: rgb(11, 0, 29);
     overflow-x: hidden;
 }
 
 .background-svg{
-    background: url("./assets/cccoil.svg");
     background-size: 100vw;
     position: fixed;
     width: 100vw;

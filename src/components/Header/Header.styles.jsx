@@ -38,6 +38,7 @@ export const HeaderDiv = styled.div`
         border-radius: 10px;
         transition: 0.3s;
     }
+    
     li:hover{
         color: #ff5fd7;
         border-radius: 10px;
